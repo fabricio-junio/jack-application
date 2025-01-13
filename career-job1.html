@@ -382,6 +382,7 @@
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
+                "accept": "*/*",
               },
               body: JSON.stringify(requestData),
             }
@@ -415,6 +416,9 @@
             {
               method: "POST",
               body: formData,
+              headers:{
+                "accept": "*/*"
+              }
             }
           );
 
